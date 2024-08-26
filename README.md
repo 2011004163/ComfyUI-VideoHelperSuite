@@ -16,3 +16,12 @@ kwargs = {'frame_rate': 25, 'loop_count': 0, 'filename_prefix': 'pexelsdance1-',
 生成的代码可正常运行
 ![image](https://github.com/user-attachments/assets/ddb2747b-6c7d-4364-aa53-ea117a1cc934)
 
+修改nodes.py中
+![image](https://github.com/user-attachments/assets/d26fa18b-d1a0-4c7d-b572-ec60d69b0f3b)
+output_dir = (
+            #folder_paths.get_output_directory()
+            "\\192.168.31.37\\gx\\aivideo"
+            if save_output
+            else folder_paths.get_temp_directory()
+        )
+在output_dir中可修改路径
